@@ -3,14 +3,14 @@
 *,*:before,*:after,figure,figcaption {box-sizing: border-box; margin: 0; padding: 0; border: 0; word-break: keep-all; word-wrap: break-word;}
 html,body {-ms-font-smoothing: antialiased; -webkit-font-smoothing: antialiased; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; -moz-text-size-adjust: 100%; /* IE 및 iOS의 글꼴 크기 조정 방지 */ width: 100%; overflow-x: hidden;}
 html {font-size: 62.5%; font-family: 'NotoSans', sans-serif;}
-body {font-size: 1.6rem; font-family: 'NotoSans'; font-weight: 400; color: #373A36; letter-spacing: -0.052rem;}
+body {font-size: 1.6rem; font-family: 'NotoSans',sans-serif; font-weight: 400; color: #000000;}
 address,article,aside,canvas,details,figure,figcaption,footer,header,menu,nav,section {display: block;}
 h1,h2,h3,h4,h5,h6 {font-size: 100%; font-weight: normal;}
 img {vertical-align: top;}
 ol,ul,li,dl,dt,dd {list-style: none;}
 table {width:100%; border-spacing: unset; border-collapse: collapse; table-layout: fixed;}
 a {text-decoration: none; color: inherit;}
-button {outline: none;}
+button {outline: none; background: transparent;}
 
 /* common */
 .ellipsis {overflow: hidden; white-space: nowrap; word-break: break-all; text-overflow: ellipsis; -o-text-overflow: ellipsis;}
