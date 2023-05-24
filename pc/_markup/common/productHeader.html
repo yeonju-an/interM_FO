@@ -1,0 +1,81 @@
+<header id="header">
+  <h1><a href="javascript:void(0)"><span class="hide">inter-M 로고</span></a></h1>
+
+  <!--gnb-->
+  <nav id="gnb">
+    <ul class="depth-1">
+      <li>
+        <span>적용분야</span>
+        <ul class="depth-2">
+          <li><a href="javascript:void(0)">교육시설</a></li>
+          <li><a href="javascript:void(0)">업무시설</a></li>
+          <li><a href="javascript:void(0)">문화시설</a></li>
+          <li><a href="javascript:void(0)">운동시설</a></li>
+        </ul>
+      </li>
+      <li>
+        <span>제품</span>
+        <ul class="depth-2">
+          <li><a href="javascript:void(0)">PA방송설비</a></li>
+          <li><a href="javascript:void(0)">SR프로오디오</a></li>
+          <li><a href="javascript:void(0)">전송솔루션</a></li>
+          <li><a href="javascript:void(0)">회의용설비</a></li>
+          <li><a href="javascript:void(0)">영상설비</a></li>
+          <li><a href="javascript:void(0)">기타</a></li>
+        </ul>
+      </li>
+      <li>
+        <span>고객지원</span>
+        <ul class="depth-2">
+          <li><a href="javascript:void(0)">자료실</a></li>
+          <li><a href="javascript:void(0)">대리점안내</a></li>
+          <li><a href="javascript:void(0)">FAQ</a></li>
+          <li><a href="javascript:void(0)">CS센터</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div id="gnb-sub-box"></div>
+  <!--//gnb-->
+
+  <!--hMenu-->
+  <div id="hMenu">
+    <div class="btn-wrap">
+      <button type="button" class="login"><span class="hide">로그인/회원가입 버튼</span></button>
+      <button type="button" class="lang"><span class="hide">언어 변경 버튼</span></button>
+      <button type="button" class="search"><span class="hide">검색 버튼</span></button>
+      <ul class="lang-select">
+        <li><button type="button">KOR</button></li>
+        <li><button type="button">ENG</button></li>
+      </ul>
+    </div>
+    <button type="button" class="menu"><span class="hide">메뉴 버튼</span></button>
+    <a href="javascript:void(0)">
+      Inter-M<br>
+      Company site
+    </a>
+  </div>
+  <!--//hMenu-->
+</header>
+
+<script>
+  // 20230524 안연주 gnb mouseenter/mouseleave
+  $('#gnb').mouseenter(function (){
+    $('#header').addClass('active');
+    $('#gnb-sub-box, .depth-2').stop().slideDown();
+  });
+  $('#header').mouseleave(function (){
+    $('#header').removeClass('active');
+    $('#gnb-sub-box, .depth-2').stop().slideUp();
+  });
+
+  // 20230524 안연주 언어 변경 버튼 mouseenter/mouseleave
+  $('.btn-wrap button.lang').mouseenter(function (){
+    $(this).addClass('active');
+    $('.lang-select').stop().slideDown();
+  });
+  $('.lang-select').mouseleave(function (){
+    $('.btn-wrap button.lang').removeClass('active');
+    $('.lang-select').stop().slideUp();
+  });
+</script>

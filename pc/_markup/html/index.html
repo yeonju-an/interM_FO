@@ -7,74 +7,58 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/product.css">
 </head>
 <body>
     <div id="wrap">
-        <!--header-->
-        <header id="header">
-            <h1><a href="javascript:void(0)"><span class="hide">inter-M 로고</span></a></h1>
-
-            <!--gnb-->
-            <nav id="gnb">
-                <ul class="depth-1">
-                    <li>
-                        <span>적용분야</span>
-                        <ul class="depth-2">
-                            <li><a href="javascript:void(0)">교육시설</a></li>
-                            <li><a href="javascript:void(0)">업무시설</a></li>
-                            <li><a href="javascript:void(0)">문화시설</a></li>
-                            <li><a href="javascript:void(0)">운동시설</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span>제품</span>
-                        <ul class="depth-2">
-                            <li><a href="javascript:void(0)">PA방송설비</a></li>
-                            <li><a href="javascript:void(0)">SR프로오디오</a></li>
-                            <li><a href="javascript:void(0)">전송솔루션</a></li>
-                            <li><a href="javascript:void(0)">회의용설비</a></li>
-                            <li><a href="javascript:void(0)">영상설비</a></li>
-                            <li><a href="javascript:void(0)">기타</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <span>고객지원</span>
-                        <ul class="depth-2">
-                            <li><a href="javascript:void(0)">자료실</a></li>
-                            <li><a href="javascript:void(0)">대리점안내</a></li>
-                            <li><a href="javascript:void(0)">FAQ</a></li>
-                            <li><a href="javascript:void(0)">CS센터</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <div id="gnb-sub-box"></div>
-            <!--//gnb-->
-
-            <!--hMenu-->
-            <div id="hMenu">
-                <div class="btn-wrap">
-                    <button type="button" class="login"><span class="hide">로그인/회원가입 버튼</span></button>
-                    <button type="button" class="lang"><span class="hide">언어 변경 버튼</span></button>
-                    <button type="button" class="search"><span class="hide">검색 버튼</span></button>
-                    <ul class="lang-select">
-                        <li><button type="button">KOR</button></li>
-                        <li><button type="button">ENG</button></li>
-                    </ul>
+        <main id="productMain">
+            <section class="sec01">
+                <div class="swiper bannerSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-bg"></div>
+                            <div class="slide-cont">
+                                <p class="slide-tit">깨끗하고 생생한 사운드 PRO AUDIO</p>
+                                <span class="slide-desc">인터엠 프로 오디오는 께끗하고 생생한 사운드로 청중에게 감동을 전합니다.</span>
+                                <button type="button" class="view-more-btn">VIEW MORE</button>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">Slide 2</div>
+                        <div class="swiper-slide">Slide 3</div>
+                        <div class="swiper-slide">Slide 4</div>
+                        <div class="swiper-slide">Slide 5</div>
+                        <div class="swiper-slide">Slide 6</div>
+                        <div class="swiper-slide">Slide 7</div>
+                        <div class="swiper-slide">Slide 8</div>
+                        <div class="swiper-slide">Slide 9</div>
+                    </div>
+                    <div class="swiper-pagination"></div>
                 </div>
-                <button type="button" class="menu"><span class="hide">메뉴 버튼</span></button>
-                <a href="javascript:void(0)">
-                    Inter-M<br>
-                    Company site
-                </a>
-            </div>
-            <!--//hMenu-->
-        </header>
-        <!--//header-->
+            </section>
+        </main>
+        <!--sec01-->
+        <!--//sec01-->
     </div>
 
     <!--Javascript Libraries-->
     <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/swiper-bundle.min.js"></script>
     <script src="../js/ui.js"></script>
+
+    <!-- header -->
+    <script type="text/javascript">
+        $.ajax({
+            url: '../common/productHeader.html',
+            timeout: 10000,
+            dataType: 'html',
+            success: function (data) {
+                $('#wrap').prepend(data);
+            },
+            error: function (xhr) {
+                alert('[' + xhr.status + '] 서버전송오류가 발생했습니다.');
+            }
+        });
+    </script>
+    <!-- //header -->
 </body>
 </html>
