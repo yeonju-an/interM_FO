@@ -1,4 +1,4 @@
 @charset "UTF-8";
 
 /* button */
-.view-more-btn {width: 17.6rem; height: 6rem; border: 1px solid #ffffff; background: url("../images/arrow_view_more.svg") no-repeat right 2.8rem center;}
+.view-more-btn {width: 17.6rem; height: 6rem; border: 1px solid rgba(255, 255, 255, 0.5); background: url("../images/arrow_view_more.svg") no-repeat right 2rem center; display: flex; align-items: center; padding: 0 0 0 2.8rem; font-size: 1.4rem; font-weight: 700;}

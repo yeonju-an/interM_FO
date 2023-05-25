@@ -18,7 +18,7 @@
 #gnb .depth-1 {display: flex;}
 #gnb .depth-1 > li {width: 100%;}
 #gnb .depth-1 > li span {position: relative; display: block; font-size: 2rem; font-weight: 500; line-height: 8rem; margin: 0 auto; width: fit-content; color: #FFFFFF;}
-#gnb .depth-1 > li span:after {position: absolute; left: 0; bottom: 0; display: block; content: ''; width: 0%; height: 0.2rem; background: #DC202E; transition: 0.3s;}
+#gnb .depth-1 > li span:after {position: absolute; left: 0; bottom: 0; display: block; content: ''; width: 0; height: 0.2rem; background: #DC202E; transition: 0.3s;}
 #gnb .depth-1 > li:hover span:after {transition: 0.3s; width: 100%;}
 
 #gnb .depth-2 {display: none; margin-top: 2.4rem;}
